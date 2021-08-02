@@ -5,16 +5,21 @@
 --grayish-blue: hsl(217, 19%, 35%);
 --blackish-blue: hsl(219, 29%, 14%);
 --White: hsl(0, 0%, 100%);
+--white-70:rgba(255, 255, 255, 0.7);
+--white-50:rgba(255, 255, 255, 0.5);
 --Light-gray: hsl(0, 0%, 81%);
 --Light-gray-blue: hsl(210, 46%, 95%);
 }
-
-main {
+body {
   font-family: "barlow semi condensed", sans-serif;
+}
+main {
+  margin:50px;
   font-family: 13px;
   display: grid;
-  grid-template-columns:370px;
-  grid-template-rows: auto;
+  grid-template-columns:300px;
+  grid-template-rows:300px;
+  gap: 30px;
   grid-template-areas:
   "daniel daniel jonathan kira"
   "jeanette patrick patrick kira";
@@ -22,14 +27,44 @@ main {
 div{
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgb(196, 194, 194);
+  padding: 20px;
+}
+p{
+  font-size: 0.9em;
+  color: var(--white-70);
+}
+img {
+  position: absolute;
+  border-radius: 100px;
+  border: 3px solid var(--Light-gray);
+}
+h2 {
+  position: relative;
+  right: -70px;
+  font-size: 0.9rem;
+}
+h3{
+  position: relative;
+  right: -70px;
+  top: -10px;
+  font-size: 0.8rem;
+  color:var(--white-50);
+}
+h4{
+  font-weight: 600;
 }
 
 .daniel {
   grid-area:daniel;
+  background-color:var(--Moderate-violet);
+  color: white;
 }
 
 .jonathan {
   grid-area:jonathan;
+  background-color:var(--grayish-blue);
+  color: white;
+
 }
 
 .jeanette {
@@ -37,7 +72,17 @@ div{
 }
 .patrick {
   grid-area:patrick;
+  background-color:var(--blackish-blue);
+  color: white;
 }
 .kira {
   grid-area:kira;
+}
+footer{
+  position: fixed;
+  padding: 10px;
+  margin:20px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
 }
