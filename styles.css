@@ -11,6 +11,7 @@
 --Light-gray-blue: hsl(210, 46%, 95%);
 }
 body {
+  background-color: var(--Light-gray-blue);
   font-family: "barlow semi condensed", sans-serif;
 }
 main {
@@ -31,7 +32,6 @@ div{
 }
 p{
   font-size: 0.9em;
-  color: var(--white-70);
 }
 img {
   position: absolute;
@@ -58,8 +58,11 @@ h4{
   grid-area:daniel;
   background-color:var(--Moderate-violet);
   color: white;
+  
 }
-
+.daniel p {
+  color: var(--white-70);
+}
 .jonathan {
   grid-area:jonathan;
   background-color:var(--grayish-blue);
@@ -69,6 +72,8 @@ h4{
 
 .jeanette {
   grid-area:jeanette;
+  background-color: white;
+  color:var(--grayish-blue);
 }
 .patrick {
   grid-area:patrick;
@@ -77,6 +82,8 @@ h4{
 }
 .kira {
   grid-area:kira;
+  background-color: white;
+  color:var(--grayish-blue);
 }
 footer{
   position: fixed;
