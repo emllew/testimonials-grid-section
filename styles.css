@@ -2,35 +2,36 @@
 
 :root {
   --Moderate-violet: hsl(263, 55%, 52%);
---grayish-blue: hsl(217, 19%, 35%);
---blackish-blue: hsl(219, 29%, 14%);
---White: hsl(0, 0%, 100%);
---white-70:rgba(255, 255, 255, 0.7);
---white-50:rgba(255, 255, 255, 0.5);
---Light-gray: hsl(0, 0%, 81%);
---Light-gray-blue: hsl(210, 46%, 95%);
+  --grayish-blue: hsl(217, 19%, 35%);
+  --blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-gray-blue: hsl(210, 46%, 95%);
 }
 body {
   background-color: var(--Light-gray-blue);
-  font-family: "barlow semi condensed", sans-serif;
+  font-family: 'barlow semi condensed', sans-serif;
 }
 main {
-  margin:50px;
+  margin: 50px;
   font-family: 13px;
   display: grid;
-  grid-template-columns:300px;
-  grid-template-rows:300px;
+  grid-template-columns: 300px;
+  grid-template-rows: 300px;
   gap: 30px;
   grid-template-areas:
-  "daniel daniel jonathan kira"
-  "jeanette patrick patrick kira";
+    'daniel daniel jonathan kira'
+    'jeanette patrick patrick kira';
 }
-div{
+div {
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgb(196, 194, 194);
   padding: 20px;
+  overflow: none;
 }
-p{
+p {
   font-size: 0.9em;
 }
 img {
@@ -43,52 +44,50 @@ h2 {
   right: -70px;
   font-size: 0.9rem;
 }
-h3{
+h3 {
   position: relative;
   right: -70px;
   top: -10px;
   font-size: 0.8rem;
-  color:var(--white-50);
+  color: var(--white-50);
 }
-h4{
+h4 {
   font-weight: 600;
 }
 
 .daniel {
-  grid-area:daniel;
-  background-color:var(--Moderate-violet);
+  grid-area: daniel;
+  background-color: var(--Moderate-violet);
   color: white;
-  
 }
 .daniel p {
   color: var(--white-70);
 }
 .jonathan {
-  grid-area:jonathan;
-  background-color:var(--grayish-blue);
+  grid-area: jonathan;
+  background-color: var(--grayish-blue);
   color: white;
-
 }
 
 .jeanette {
-  grid-area:jeanette;
+  grid-area: jeanette;
   background-color: white;
-  color:var(--grayish-blue);
+  color: var(--grayish-blue);
 }
 .patrick {
-  grid-area:patrick;
-  background-color:var(--blackish-blue);
+  grid-area: patrick;
+  background-color: var(--blackish-blue);
   color: white;
 }
 .kira {
-  grid-area:kira;
+  grid-area: kira;
   background-color: white;
-  color:var(--grayish-blue);
+  color: var(--grayish-blue);
 }
-footer{
+footer {
   position: fixed;
   padding: 10px;
-  margin:20px;
+  margin: 20px;
   text-align: center;
   width: 100%;
   bottom: 0;
